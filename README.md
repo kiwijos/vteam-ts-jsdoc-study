@@ -103,7 +103,7 @@ export const dog = {
 };
 ```
 
-> The **@typedef** tag is used to declare types. These types can later be referenced using the **@type** tag. This is similar to how you declare and reference interfaces in .ts files.
+The **@typedef** tag is used to declare types. These types can later be referenced using the **@type** tag. This is similar to how you declare and reference interfaces in .ts files.
 
 Class constructor:
 
@@ -137,7 +137,7 @@ export class Dog {
 }
 ```
 
-Using the above example, we can look at the code in action by running the `tsc` command. If you have VSCode configured with the built in _TypeScript and JavaScript Lanquage Feature_, the `age` property in the second use case will be flagged with red squiggles underneath and you will get tool tip if you hover over it.
+Using the above example, we can look at the code in action by running the `tsc` command. If you have VSCode configured with the built in _TypeScript and JavaScript Lanquage Feature_, the `age` property in the second use case will be flagged with red squiggles underneath and you will get a tool tip if you hover over it.
 
 ```js
 // ✅ This works!
