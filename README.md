@@ -1,4 +1,4 @@
-# Type safe JavaScript with JSDoc and TypeScript
+# Typesafe JavaScript with JSDoc and TypeScript
 
 Here's what you're going to want to know before you read this. This isn't a comprehensive guide to writing comments using JSDoc syntax, although there will be a few examples. It also isn't a guide to writing TypeScript, you'll find even less of that here. It's about how you can continue writing plain JavaScript and still enjoy type safety--or, if you're using TypeScript, why you should consider coming back.
 
