@@ -1,0 +1,22 @@
+{
+     "compilerOptions": {
+        "module": "nodenext", // <-- module type of generated .js files 
+        "target": "es6", // <-- language version of generated .js files
+        "allowJs": true, // <-- allow .js files to be imported
+        "checkJs": true, // <-- report errors in .js files
+        "moduleResolution": "nodenext", // <-- has to do with how Typescript resolves module specifiers to files
+        "alwaysStrict": true, // <-- output 'use strict' in generated .js files (not relevant in this case, but good practice)
+        "strictNullChecks": false, // <-- essentially ignore null and undefined
+        "emitDeclarationOnly": true, // <-- only output .d.ts files (and no .js files)
+        "declaration": true, // <-- generate .d.ts files from .js (and .ts, but no relevent in this case) files
+        "outDir": "types", // <-- output directory for generated .d.ts (and .js, not in this case) files
+        "removeComments": false // <-- keep comments in generated .d.ts files
+    },
+    "include": [
+        "src/**/*.js" // <-- include .js files in this directory and all subdirectories
+    ],
+    "exclude": [
+        "node_modules", // <-- exclude node_modules directory
+        "types" // <-- exclude types directory, where generated .d.ts files are output
+    ]
+}
