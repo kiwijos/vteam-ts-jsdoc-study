@@ -96,7 +96,7 @@ Object literals:
  * @property {number} age The dogs's age.
  * @property {Function} bark Bark!
  */
-export const dog = {
+const dog = {
     name: "Rambo",
     age: 3,
     bark: () => "Woof!",
@@ -111,7 +111,7 @@ Class constructor:
 /**
  * Class to construct a dog object with name, age and bark method.
  */
-export class Dog {
+class Dog {
     /**
      * @param {Object} props
      * @param {string} props.name
