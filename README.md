@@ -84,6 +84,30 @@ npm install --save-dev @types/express
 
 This will install the types to your node_modules/@types directory.
 
+If you've used TypeScript this is probably very familiar to you. The difference is how you import specific types into your code.
+
+In a .ts file you can use type imports at the top, just as you would use any other import:
+
+```ts
+import type { Request, Response } from "express";
+
+function myFunction(req: Request, res: Response) {
+    ...
+}
+```
+
+This is not allowed in .js files. To use the same types with JSDoc:
+
+```js
+/**
+ * @param {import("express").Request} req
+ * @param {import("express").Response} res
+ */
+function myFunction(req, res) {
+    ...
+}
+```
+
 ## More JSDoc Examples
 
 Object literals:
@@ -104,6 +128,31 @@ const dog = {
 ```
 
 The **@typedef** tag is used to declare types. These types can later be referenced using the **@type** tag. This is similar to how you declare and reference interfaces in .ts files.
+
+Using the type definition `Dog` from the example above, we could write:
+
+```js
+/** @type {Dog} */
+const dog = {
+    ...
+};
+```
+
+Or, if we have a function that accepts a `Dog` object as an argument we could write:
+
+```js
+/**
+ * @param {Dog} dog
+ * @returns {string}
+ */
+function isDogOldEnough(dog) {
+    if (dog.age > 5) {
+        return "The dog is old enough!"; // To do what? Nobody knows...
+    }
+
+    return "The dog is too young.";
+}
+```
 
 Class constructor:
 
