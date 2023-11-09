@@ -196,6 +196,25 @@ const myDogRambo = new Dog({ name: "Rambo", age: 3 });
 const myDogBuster = new Dog({ name: "Buster", age: "five" });
 ```
 
+## Enable checkJs globally
+
+In this project there's a `tsconfig.json` file with the option _checkJs_ set to true. This is what gives you type checking in .js files. If you're coding in VSCode, you'll see this type checking in your files directly (red squiggles, hints etc.). If this is something that you always want, regardless of your current workspace, you can configure the checkJs option globally in your User Settings.
+
+The fastest way to go about this is to:
+
+1. Open the Command Palette (Ctrl+Shift+P, or Cmd+Shift+P on Mac)
+2. Search for or pick from the list _Preferences: Open User Settings (JSON)_
+3. Add the line:
+
+```json
+// settings.json
+{
+    "..."
+    "js/ts.implicitProjectConfig.checkJs": true
+}
+
+```
+
 ## Happy coding!
 
 Remember that, in most cases, comments can be written in different ways to achieve the same result and type safety. Finding a style that fits your or your team's use cases and preferences is the way to go. Just as with traditional TypeScript, you can configure how strict you want the type checking to be.
