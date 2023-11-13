@@ -207,7 +207,6 @@ The fastest way to go about this is to:
 3. Add the line:
 
 ```json
-// settings.json
 {
     "..."
     "js/ts.implicitProjectConfig.checkJs": true
